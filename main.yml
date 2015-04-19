@@ -23,9 +23,9 @@ EDXAPP_DJFS:
   directory_root: '{{ edxapp_data_dir }}/django-pyfs/static/django-pyfs'
   url_root : '/static/django-pyfs'
 
-EDXAPP_LMS_BASE: ""
-EDXAPP_PREVIEW_LMS_BASE: ""
-EDXAPP_CMS_BASE: ""
+EDXAPP_LMS_BASE: "x.edustack.org"
+EDXAPP_PREVIEW_LMS_BASE: "preview.edustack.org"
+EDXAPP_CMS_BASE: "studio.edustack.org"
 
 EDXAPP_LMS_GUNICORN_EXTRA: ""
 EDXAPP_LMS_GUNICORN_EXTRA_CONF: ""
@@ -73,11 +73,11 @@ EDXAPP_LMS_ENV: 'lms.envs.aws'
 EDXAPP_CMS_ENV: 'cms.envs.aws'
 
 EDXAPP_EMAIL_BACKEND: 'django.core.mail.backends.smtp.EmailBackend'
-EDXAPP_EMAIL_HOST: 'localhost'
+EDXAPP_EMAIL_HOST: 'smtp.exmail.qq.com'
 EDXAPP_EMAIL_PORT: 25
 EDXAPP_EMAIL_USE_TLS: False
-EDXAPP_EMAIL_HOST_USER: ''
-EDXAPP_EMAIL_HOST_PASSWORD: ''
+EDXAPP_EMAIL_HOST_USER: 'noreply@edustack.org'
+EDXAPP_EMAIL_HOST_PASSWORD: 'iflab123'
 
 EDXAPP_LOG_LEVEL: 'INFO'
 
@@ -92,7 +92,7 @@ EDXAPP_OEE_USER: 'lms'
 EDXAPP_OEE_PASSWORD: 'password'
 
 EDXAPP_ANALYTICS_API_KEY:  ""
-EDXAPP_PAYMENT_SUPPORT_EMAIL: "billing@example.com"
+EDXAPP_PAYMENT_SUPPORT_EMAIL: "billing@edustack.org"
 EDXAPP_ZENDESK_USER: ""
 EDXAPP_ZENDESK_URL: ""
 EDXAPP_ZENDESK_API_KEY: ""
@@ -103,8 +103,8 @@ EDXAPP_CELERY_BROKER_VHOST: ""
 EDXAPP_VIDEO_CDN_URLS:
   EXAMPLE_COUNTRY_CODE: "http://example.com/edx/video?s3_url="
 
-EDXAPP_PLATFORM_NAME: 'Your Platform Name Here'
-EDXAPP_STUDIO_NAME: 'Studio'
+EDXAPP_PLATFORM_NAME: 'eduStackX'
+EDXAPP_STUDIO_NAME: 'Studio eduStackX'
 EDXAPP_STUDIO_SHORT_NAME: 'Studio'
 
 EDXAPP_CAS_SERVER_URL: ""
@@ -182,9 +182,9 @@ EDXAPP_BOOK_URL: ""
 # This needs to be set to localhost
 # if xqueue is run on the same server
 # as the lms (it's sent in the request)
-EDXAPP_SITE_NAME: 'localhost'
+EDXAPP_SITE_NAME: 'x.edustack.org'
 EDXAPP_LMS_SITE_NAME: "{{ EDXAPP_SITE_NAME }}"
-EDXAPP_CMS_SITE_NAME: 'localhost'
+EDXAPP_CMS_SITE_NAME: 'studio.edustack.org'
 EDXAPP_MEDIA_URL:  "/media"
 EDXAPP_ANALYTICS_SERVER_URL:  ""
 EDXAPP_FEEDBACK_SUBMISSION_EMAIL: ""
@@ -208,19 +208,19 @@ EDXAPP_COURSE_REQUEST_RATE: '5r/s'
 EDXAPP_COURSE_REQUEST_BURST_RATE: 10
 
 EDXAPP_LANG: 'en_US.UTF-8'
-EDXAPP_LANGUAGE_CODE : 'en'
-EDXAPP_TIME_ZONE: 'America/New_York'
+EDXAPP_LANGUAGE_CODE : 'zh-cn'
+EDXAPP_TIME_ZONE: 'Asia/Shanghai'
 
-EDXAPP_TECH_SUPPORT_EMAIL: 'technical@example.com'
-EDXAPP_CONTACT_EMAIL: 'info@example.com'
-EDXAPP_BUGS_EMAIL: 'bugs@example.com'
-EDXAPP_DEFAULT_FROM_EMAIL: 'registration@example.com'
-EDXAPP_DEFAULT_FEEDBACK_EMAIL: 'feedback@example.com'
-EDXAPP_DEFAULT_SERVER_EMAIL: 'devops@example.com'
-EDXAPP_BULK_EMAIL_DEFAULT_FROM_EMAIL: 'no-reply@example.com'
+EDXAPP_TECH_SUPPORT_EMAIL: 'technical@edustack.org'
+EDXAPP_CONTACT_EMAIL: 'info@edustack.org'
+EDXAPP_BUGS_EMAIL: 'bugs@edustack.org'
+EDXAPP_DEFAULT_FROM_EMAIL: 'registration@edustack.org'
+EDXAPP_DEFAULT_FEEDBACK_EMAIL: 'feedback@edustack.org'
+EDXAPP_DEFAULT_SERVER_EMAIL: 'devops@edustack.org'
+EDXAPP_BULK_EMAIL_DEFAULT_FROM_EMAIL: 'no-reply@edustack.org'
 EDXAPP_BULK_EMAIL_LOG_SENT_EMAILS: false
-EDXAPP_UNIVERSITY_EMAIL: 'university@example.com'
-EDXAPP_PRESS_EMAIL: 'press@example.com'
+EDXAPP_UNIVERSITY_EMAIL: 'university@edustack.org'
+EDXAPP_PRESS_EMAIL: 'press@edustack.org'
 
 EDXAPP_PLATFORM_TWITTER_ACCOUNT: '@YourPlatformTwitterAccount'
 EDXAPP_PLATFORM_FACEBOOK_ACCOUNT: 'http://www.facebook.com/YourPlatformFacebookAccount'
